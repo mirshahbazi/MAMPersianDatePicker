@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="MAMAlertDialogStyle">
+        <item name="android:background">#ffffff</item> <!-- MUST HAVE with white bg-->
+        <item name="android:windowFrame">@color/transparent</item><!-- not sure what this changes-->
+        <item name="android:windowBackground">@drawable/button_border</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:titleTextStyle">@style/setwindowTitleStyle</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@color/transparent</item>
+        <item name="android:windowTitleStyle">@style/setwindowTitleStyle</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+    </style>
+    <style name="setwindowTitleStyle">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textAlignment">textEnd</item>
+    </style>
+</resources>

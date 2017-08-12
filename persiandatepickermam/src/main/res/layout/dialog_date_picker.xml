@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aigestudio="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    >
+<android.support.v7.widget.GridLayout
+    android:id="@+id/wheel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:layout_centerHorizontal="true"
+    app:columnCount="3"
+    app:orientation="horizontal">
+
+    <com.aigestudio.wheelpicker.widgets.WheelYearPicker
+        android:id="@+id/npYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="#A9DCFF"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        aigestudio:wheel_atmospheric="true"
+        aigestudio:wheel_curved="true"
+        aigestudio:wheel_cyclic="true"
+        aigestudio:wheel_item_align="center"
+        aigestudio:wheel_item_text_color="#A7A7DB"
+        aigestudio:wheel_item_text_size="24sp"
+        aigestudio:wheel_selected_item_text_color="#000000"
+        app:layout_column="0" />
+
+    <com.aigestudio.wheelpicker.WheelPicker
+        android:id="@+id/npMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="#A9DCFF"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        aigestudio:wheel_atmospheric="true"
+        aigestudio:wheel_curved="true"
+        aigestudio:wheel_cyclic="true"
+        aigestudio:wheel_item_text_color="#A7A7DB"
+        aigestudio:wheel_item_text_size="24sp"
+        aigestudio:wheel_selected_item_text_color="#000000"
+        app:layout_column="1" />
+
+    <com.aigestudio.wheelpicker.widgets.WheelYearPicker
+        android:id="@+id/npDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="#A9DCFF"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        aigestudio:wheel_atmospheric="true"
+        aigestudio:wheel_curved="true"
+        aigestudio:wheel_cyclic="true"
+        aigestudio:wheel_item_align="center"
+        aigestudio:wheel_item_text_color="#A7A7DB"
+        aigestudio:wheel_item_text_size="24sp"
+        aigestudio:wheel_selected_item_text_color="#000000"
+        app:layout_column="2" />
+</android.support.v7.widget.GridLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_below="@id/wheel"
+        android:padding="5.0dip">
+
+        <Button
+            android:id="@+id/btnSelect"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="4.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/button"
+            android:text="تایید"
+            android:textColor="#ffffffff"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="4.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/button"
+            android:text="انصراف"
+            android:textColor="#ffffffff"
+            android:textSize="14dp" />
+    </LinearLayout>
+</RelativeLayout>
+
+
+
